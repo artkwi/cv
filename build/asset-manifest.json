@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/artkwi.github.io/static/css/main.5f361e03.chunk.css",
+    "main.js": "/artkwi.github.io/static/js/main.fbae91af.chunk.js",
+    "main.js.map": "/artkwi.github.io/static/js/main.fbae91af.chunk.js.map",
+    "runtime-main.js": "/artkwi.github.io/static/js/runtime-main.8fc0a379.js",
+    "runtime-main.js.map": "/artkwi.github.io/static/js/runtime-main.8fc0a379.js.map",
+    "static/js/2.de9b437f.chunk.js": "/artkwi.github.io/static/js/2.de9b437f.chunk.js",
+    "static/js/2.de9b437f.chunk.js.map": "/artkwi.github.io/static/js/2.de9b437f.chunk.js.map",
+    "index.html": "/artkwi.github.io/index.html",
+    "precache-manifest.bc35b215b2af6d3d4706bf3ab0aacbe8.js": "/artkwi.github.io/precache-manifest.bc35b215b2af6d3d4706bf3ab0aacbe8.js",
+    "service-worker.js": "/artkwi.github.io/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/artkwi.github.io/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.de9b437f.chunk.js.LICENSE.txt": "/artkwi.github.io/static/js/2.de9b437f.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/artkwi.github.io/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8fc0a379.js",
+    "static/js/2.de9b437f.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.fbae91af.chunk.js"
+  ]
+}
