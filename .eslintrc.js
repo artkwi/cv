@@ -20,6 +20,8 @@ module.exports = {
         '@typescript-eslint'
     ],
     rules: {
-        "no-extra-semi": "on",
+        "semi": 0,
+        "no-extra-semi": 0,
+        "no-implicit-any": 1,
     }
 }
