@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 
 const lineCSS = css`
-    background-color: #fff;
+    background-color: ${({ theme }) => theme.colors.white};
     border-radius: 1px;
     height: 2px;
     width: 100%;
@@ -39,7 +39,7 @@ export const Lines = styled.span<{ isOpen: boolean }>`
     &:before {
         content: '';
         ${lineCSS};
-        background-color: ${({ isOpen }) => (isOpen ? '#000' : '#FFF')};
+        background-color: ${({ isOpen, theme }) => (isOpen ? theme.colors.black : theme.colors.white)};
         position: absolute;
         transform: translate(0, 8px);
         transform: ${({ isOpen }) => isOpen && 'rotate(-45deg)'};
