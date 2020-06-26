@@ -14,22 +14,45 @@ export const Nav = styled.nav`
     width: 100%;
 `;
 
-export const Items = styled.ul<{ isOpen: boolean }>`
-    display: ${({ isOpen }) => (isOpen ? 'block' : 'none')};
-    /* display: grid; */
-    /* grid-template-columns: repeat(4, 1fr); */
-    height: 100vh;
-    background-color: blue;
-    ${media.greaterThan('medium')`
-        background-color: red;
-    `}
-
-`;
-
 export const Item = styled.li`
+    position: relative;
+    z-index: 25;
     background: green;
     padding: 20px;
     text-align: center;
+`;
+
+export const Items = styled.ul<{ isOpen: boolean }>`
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &:before {
+        content: '';
+        transition: all 0.2s;
+        background-color: ${({ theme }) => theme.colors.blue};
+        transform: ${({ isOpen }) => (isOpen ? 'scale(1)' : 'scale(0)')};
+        width: 300vmax;
+        height: 300vmax;
+        position: absolute;
+        transform-origin: 50% 50%;
+        top: -150vmax;
+        right: -150vmax;
+        border-radius: 50%;
+        overflow: hidden;
+        will-change: transform;
+    }
+
+    ${Item} {
+        opacity: ${({ isOpen }) => (isOpen ? 1 : 0)};
+        transition: all 0.2s;
+        will-change: opacity;
+    }
+
+    ${media.greaterThan('medium')`
+        background-color: red;
+    `}
 `;
 
 // TODO - change to button
@@ -42,7 +65,7 @@ export const MenuBtn = styled.a<{ isOpen: boolean }>`
     position: absolute;
     top: 10px;
     right: 20px;
-    z-index: 10;
+    z-index: 30;
 `;
 
 export const Lines = styled.span<{ isOpen: boolean }>`
@@ -52,7 +75,8 @@ export const Lines = styled.span<{ isOpen: boolean }>`
     &:before {
         content: '';
         ${lineCSS};
-        background-color: ${({ isOpen, theme }) => (isOpen ? theme.colors.black : theme.colors.white)};
+        background-color: ${({ isOpen, theme }) =>
+            isOpen ? theme.colors.black : theme.colors.white};
         position: absolute;
         transform: translate(0, 8px);
         transform: ${({ isOpen }) => isOpen && 'rotate(-45deg)'};
