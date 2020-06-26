@@ -23,5 +23,6 @@ module.exports = {
         "semi": 0,
         "no-extra-semi": 0,
         "no-implicit-any": 1,
+        "react/prop-types": 0
     }
 }
