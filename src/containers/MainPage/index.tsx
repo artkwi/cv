@@ -9,11 +9,11 @@ const MainPage = () => {
       <Navbar/>
       <Styled.Main>
         <Styled.BackgroundImg src={desk} loading="lazy" alt="" />
-        <Styled.Section>
+        <Styled.Section id='about-me'>
               Nazywam się Artur Kwiatkowski. Jestem świeżo upieczonym inżynierem informatyki Uniwersytetu im. Adama Mickiewicza w Poznaniu. W kwietniu 2019 roku przeprowadzam się do Krakowa. Tam zamierzam zacząć pracę związaną z programowaniem. Obecnie rozwijam się w kierunku tworzenia aplikacji i stron internetowych. Nie zamykam się jednak na inne horyzontyw dziedzinie IT - praca powinna stale rozwijać i dawać przyjemność.
 
         </Styled.Section>
-        <SectionTitle title={'Wykształcenie'}></SectionTitle>
+        <SectionTitle id={'education'} title={'Wykształcenie'}></SectionTitle>
         <Styled.Section>
               10.2015 – 03.2019
 
@@ -26,7 +26,7 @@ Università della Calabria - studia z programu Erasmus+ we Włoszech
 Technikum informatyczne w Zespole Szkół nr 2 im. Stanisława Staszica w Nowym Tomyślu - tytuł technika informatyka oraz złotego absolwenta
 
         </Styled.Section>
-        <SectionTitle title={'Doświadczenie zawodowe'}></SectionTitle>
+        <SectionTitle id={'work-experience'} title={'Doświadczenie zawodowe'}></SectionTitle>
         <Styled.Section>
               10.2015 – 03.2019
 
@@ -39,7 +39,7 @@ Università della Calabria - studia z programu Erasmus+ we Włoszech
 Technikum informatyczne w Zespole Szkół nr 2 im. Stanisława Staszica w Nowym Tomyślu - tytuł technika informatyka oraz złotego absolwenta
 
         </Styled.Section>
-        <SectionTitle title={'Umiejętności'}></SectionTitle>
+        <SectionTitle id={'skills'} title={'Umiejętności'}></SectionTitle>
         <Styled.Section>
               10.2015 – 03.2019
 
@@ -52,7 +52,7 @@ Università della Calabria - studia z programu Erasmus+ we Włoszech
 Technikum informatyczne w Zespole Szkół nr 2 im. Stanisława Staszica w Nowym Tomyślu - tytuł technika informatyka oraz złotego absolwenta
 
         </Styled.Section>
-        <SectionTitle title={'Kontakt'}></SectionTitle>
+        <SectionTitle id={'contact'} title={'Kontakt'}></SectionTitle>
         <Styled.Section>
               10.2015 – 03.2019
 

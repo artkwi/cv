@@ -8,12 +8,14 @@ export const Main = styled.main`
 export const BackgroundImg = styled.img`
     position: fixed;
     z-index: -1;
-    height: 100%;
     width: auto;
+    max-height: 100%;
+    max-width: unset;
 
     ${media.greaterThan('medium')`
+        max-width: 100%;
         height: auto;
-        width: 100%;
+        max-height: unset;
     `}
 `;
 
