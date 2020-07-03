@@ -10,23 +10,29 @@ const lineCSS = css`
     z-index: 35;
 `;
 
-export const Nav = styled.nav`
+export const Nav = styled.nav<{ isOpen: boolean }>`
     position: fixed;
+    z-index: 10;
+    height: ${({ isOpen }) => (isOpen && '100vh')};
     width: 100%;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    font-size: 20px;
+    letter-spacing: 5px;
+    
     ${media.greaterThan('medium')`
-        justify-content: flex-start;
+    justify-content: flex-start;
+    height: unset;
+    font-size: 18px;
+    letter-spacing: 1px;
     `}
 `;
 
 export const Item = styled.li`
     position: relative;
     z-index: 45;
-    background-color: #2b6d9985;
+    background-color: #2b6b99a6;
     height: 100%;
     padding: 20px;
     text-align: center;
@@ -37,7 +43,7 @@ export const Item = styled.li`
         content: '';
         display: block;
         position: absolute;
-        background-color: #005792;
+        background-color: #259bea;
         opacity: 0.8;
         top: 0;
         bottom: 0;
@@ -62,7 +68,6 @@ export const Items = styled.ul<{ isOpen: boolean }>`
     ${Item} {
         opacity: ${({ isOpen }) => (isOpen ? 1 : 0)};
         transition: all 0.2s;
-        will-change: opacity;
 
         ${media.greaterThan('medium')`
             opacity: 1;
@@ -78,7 +83,6 @@ export const Items = styled.ul<{ isOpen: boolean }>`
     `}
 `;
 
-// TODO - change to button
 export const MenuBtn = styled.button<{ isOpen: boolean }>`
     display: grid;
     grid-template-columns: 1fr;
@@ -94,7 +98,7 @@ export const MenuBtn = styled.button<{ isOpen: boolean }>`
         content: '';
         position: relative;
         transition: all 0.3s linear;
-        background-color: ${({ theme }) => theme.colors.blue};
+        background-color: #000000de;
         transform: ${({ isOpen }) => (isOpen ? 'scale(1)' : 'scale(0)')};
         width: 300vmax;
         height: 300vmax;
@@ -111,7 +115,7 @@ export const MenuBtn = styled.button<{ isOpen: boolean }>`
         position: absolute;
         border-radius: 50%;
         display: block;
-        background-color: ${({ theme }) => theme.colors.blueHard};
+        background-color: #2b6b99a6;
         width: 50px;
         height: 50px;
         left: 50%;
@@ -132,7 +136,7 @@ export const Lines = styled.span<{ isOpen: boolean }>`
         ${lineCSS};
         left: 0%;
         background-color: ${({ isOpen, theme }) =>
-            isOpen ? theme.colors.black : theme.colors.white};
+            isOpen ? theme.colors.white : theme.colors.white};
         position: absolute;
         transform: translate(0, 8px);
         transform: ${({ isOpen }) => isOpen && 'rotate(-45deg)'};

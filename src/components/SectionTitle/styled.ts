@@ -5,6 +5,6 @@ export const Heading = styled.h2`
     align-items: center;
     justify-content: center;
     height: 50px;
-    background-color: ${({ theme }) => (theme.colors.black)};
+    background-color: ${({ theme }) => (theme.colors.whiteTransparent)};
     font-size: ${({ theme }) => (theme.fontSize.xl)}px;
 `;

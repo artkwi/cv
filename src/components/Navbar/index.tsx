@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import * as Styled from './styled';
-// import { Link, animateScroll as scroll } from 'react-scroll';
 import { ScrollLink } from './../../components';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <Styled.Nav>
+    <Styled.Nav isOpen={isOpen}>
       <Styled.MenuBtn
         isOpen={isOpen}
         onClick={() => setIsOpen(!isOpen)}

@@ -31,3 +31,9 @@ code {
     src: local('Roboto'),
         url('./assets/fonts/Roboto-Bold.ttf') format('opentype');
 }
+
+@font-face {
+    font-family: 'Exo';
+    src: local('Exo'),
+        url('./assets/fonts/Exo//Exo-VariableFont_wght.ttf') format('opentype');
+}
