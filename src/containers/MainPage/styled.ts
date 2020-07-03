@@ -120,3 +120,7 @@ export const ProfileSignature = styled.p`
 export const Dates = styled.p`
     color: red;
 `;
+
+export const Description = styled.p`
+    color: blue;
+`;
