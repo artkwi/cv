@@ -1,3 +1,5 @@
 export { default as Navbar } from './Navbar'
 export { default as SectionTitle } from './SectionTitle'
 export { default as ScrollLink } from './ScrollLink'
+export { default as Contact } from './Contact'
+export { default as IconManager } from './IconManager'

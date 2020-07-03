@@ -1,6 +1,6 @@
 import React from 'react'
 import * as Styled from './styled'
-import { SectionTitle, Navbar } from './../../components'
+import { Contact, SectionTitle, Navbar } from './../../components'
 // import desk from './../../assets/images/desk.jpg'
 import profileImg from './../../assets/images/profile-image.jpg'
 import aboutBackground from './../../assets/images/winter-bg.jpg'
@@ -91,7 +91,7 @@ const MainPage = () => {
         </Styled.Section>
         <SectionTitle id={'contact'} title={c[lang].contact}></SectionTitle>
         <Styled.Section>
-
+          <Contact />
         </Styled.Section>
       </Styled.Main>
     </>
