@@ -15,7 +15,7 @@ const MainPage = () => {
         {/* <Styled.BackgroundImg src={desk} loading="lazy" alt="" /> */}
         <Styled.Section id='about-me'>
           <Styled.ProfileImageWrapper>
-            <Styled.ProfileBackground src={aboutBackground}/>
+            <Styled.ProfileBackground src={aboutBackground} alt=''/>
             <Styled.Figure>
               <Styled.ProfileImage src={profileImg} />
             </Styled.Figure>

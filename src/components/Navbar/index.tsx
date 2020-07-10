@@ -10,6 +10,7 @@ const Navbar = () => {
         isOpen={isOpen}
         onClick={() => setIsOpen(!isOpen)}
         role="button"
+        aria-label="menu"
       >
         <Styled.Lines isOpen={isOpen} />
       </Styled.MenuBtn>
