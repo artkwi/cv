@@ -90,9 +90,7 @@ const MainPage = () => {
           </Styled.Description>
         </Styled.Section>
         <SectionTitle id={'contact'} title={c[lang].contact}></SectionTitle>
-        <Styled.Section>
-          <Contact />
-        </Styled.Section>
+        <Contact />
       </Styled.Main>
     </>
   )

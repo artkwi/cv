@@ -1,5 +1,14 @@
-import styled, { css } from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
 import media from 'styled-media-query';
+
+const navAnimation = keyframes`
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+`;
 
 const lineCSS = css`
     background-color: ${({ theme }) => theme.colors.white};
@@ -13,14 +22,16 @@ const lineCSS = css`
 export const Nav = styled.nav<{ isOpen: boolean }>`
     position: fixed;
     z-index: 10;
-    height: ${({ isOpen }) => (isOpen && '100vh')};
+    height: ${({ isOpen }) => isOpen && '100vh'};
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-size: 20px;
     letter-spacing: 5px;
-    
+    opacity: 0;
+    animation: ${navAnimation} 0.5s ease-out 1s forwards;
+
     ${media.greaterThan('medium')`
     justify-content: flex-start;
     height: unset;
@@ -43,19 +54,25 @@ export const Item = styled.li`
         content: '';
         display: block;
         position: absolute;
-        background-color: #259bea;
+        background-color: #ffffff;
         opacity: 0.8;
         top: 0;
         bottom: 0;
-        left: -100%;
-        width: 100%;
+        width: 0;
+        height: 0;
         z-index: -1;
-        transition: all 0.2s;
+        transition: transform 0.2s;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        width: 100%;
+        height: 100%;
     }
 
     &:hover {
+        color: #000000;
         &:after {
-            left: 0;
+            transform: translate(-50%, -50%) scale(1);
         }
     }
 `;
@@ -97,7 +114,7 @@ export const MenuBtn = styled.button<{ isOpen: boolean }>`
     &:before {
         content: '';
         position: relative;
-        transition: all 0.3s linear;
+        transition: transform 0.3s linear;
         background-color: #000000de;
         transform: ${({ isOpen }) => (isOpen ? 'scale(1)' : 'scale(0)')};
         width: 300vmax;

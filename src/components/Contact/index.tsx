@@ -5,12 +5,20 @@ import { IconManager } from './../../components'
 
 const Contact: React.FunctionComponent = () => {
   return (
-    <div>contact
-      <IconManager name='Mail' />
-      <IconManager name='LinkedIn' />
-      <IconManager name='GitHub' />
-      <IconManager name='CV' />
-    </div>
+    <Styled.Wrapper>
+      <Styled.IconWrapper>
+        <IconManager name='Mail' />
+      </Styled.IconWrapper>
+      <Styled.IconWrapper>
+        <IconManager name='LinkedIn' />
+      </Styled.IconWrapper>
+      <Styled.IconWrapper>
+        <IconManager name='GitHub' />
+      </Styled.IconWrapper>
+      <Styled.IconWrapper>
+        <IconManager name='CV' />
+      </Styled.IconWrapper>
+    </Styled.Wrapper>
   );
 };
 
