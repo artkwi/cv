@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
     padding: 40px 20px;
 `;
 
-export const IconWrapper = styled.div`
+export const IconWrapper = styled.a`
     font-size: 40px;
     display: flex;
     justify-content: center;
