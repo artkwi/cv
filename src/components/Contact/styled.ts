@@ -12,6 +12,9 @@ export const IconWrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 1;
+    
     svg,
     path {
         transition: all 0.1s;

@@ -47,7 +47,7 @@ export const Item = styled.li`
     height: 100%;
     padding: 20px;
     text-align: center;
-    font-family: Roboto, sans-serif;
+    font-family: Exo, sans-serif;
     overflow: hidden;
 
     &:after {

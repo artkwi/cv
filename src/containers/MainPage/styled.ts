@@ -1,25 +1,21 @@
 import styled, { keyframes } from 'styled-components';
 import media from 'styled-media-query';
 
-// TODO - remove if not used
-const bgAnimation = keyframes`
-  0%   {background-color: #000000;}
-  50%  {background-color: #332a2a;}
-  100% {background-color: #000000;}
-`;
-
 const underlineAnimation = keyframes`
     0%   {width: 0%}
     100% {width: 95%;}  
 `;
 
+const underlineDescriptionAnimation = keyframes`
+    0%   {width: 0%}
+    100% {width: 50%;}  
+`;
+
 export const Main = styled.main`
-    /* animation: ${bgAnimation} 6s linear infinite; */
     height: 100%;
-    /* background-color: ${({ theme }) => theme.colors.black}; */
+    letter-spacing: 1px;
     font-family: Roboto, sans-serif;
     background-color: #000000;
-    /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='565' height='67.8' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='8.4' stroke-opacity='0.89'%3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E"); */
 `;
 
 export const BackgroundImg = styled.img`
@@ -36,16 +32,28 @@ export const BackgroundImg = styled.img`
     `}
 `;
 
+export const AnimatedBackground = styled.div`
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 0;
+`;
+
 export const Section = styled.section`
     font-family: Exo, sans-serif;
-    height: calc(100vh - 50px);
     padding: 15px;
     text-align: center;
 
     &:first-of-type {
-        height: 100vh;
-        padding-top: 0px;
+        /* height: 100vh; */
+        padding: 0px 0px 20px;
     }
+`;
+
+export const SectionInner = styled.div`
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+    background-color: #151719;
+    padding: 80px 40px;
 `;
 
 export const ProfileImageWrapper = styled.div`
@@ -57,7 +65,6 @@ export const ProfileImageWrapper = styled.div`
     justify-content: center;
     overflow: hidden;
     margin: 0 -15px;
-    /* background-color: #fff; */
 `;
 
 export const ProfileBackground = styled.img`
@@ -117,10 +124,30 @@ export const ProfileSignature = styled.p`
     }
 `;
 
+export const AboutMeDescription = styled.p`
+    padding: 80px 40px 140px;
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 0;
+        height: 1px;
+        background-color: #f7b226;
+        bottom: 0px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        animation: ${underlineDescriptionAnimation} 0.5s ease-out 1s forwards;
+    }
+`;
+
 export const Dates = styled.p`
-    color: red;
+    color: #c0c0c0;
+    font-size: 13px;
 `;
 
 export const Description = styled.p`
-    color: blue;
+    color: #f3f3f3;
+    padding: 20px 0 40px;
 `;
