@@ -3,7 +3,8 @@ export default {
     welcome: 'Hello!',
     aboutMe: 'About me',
     aboutMeDescription:
-            'My name is Artur Kwiatkowski. I have just graduated Computer Science at Adam Mickiewicz University in Poznań. I am going to move to Kraków in April 2019. I would like to start working there in the programming area. Currently I am developing myself in creating web applications and websites. I am open for a new challanges in IT field - work should improve our skills and give joy.',
+            `My name is Artur Kwiatkowski. I graduated Computer Science at Adam Mickiewicz University in Poznań. I moved to Kraków in April 2019. I have been working in DevAndDeliver as front-end developer for over a year. In my work I mainly use Vue.js and React.js.
+I appreciate the nice atmosphere, teamwork and good coffee `,
     education: 'Education',
     experience: 'Experience',
     skills: 'Skills',
@@ -19,14 +20,26 @@ export default {
     educationDate2: '10.2017 – 03.2018',
     educationDate3: '09.2011 – 04.2015',
 
+    experience0: 'DevAndDeliver - front-end developer (Vue, React)',
     experience1: 'Internship in Żabka Polska - first line of support',
     experience2: 'Internship in Phoenix Contact - .NET programmer',
     experience3:
             'Europass Mobility international intership of information technology in „BBS1” in German',
 
+    experienceDate0: '05.2019 – present',
     experienceDate1: '07.2018 – 09.2018',
     experienceDate2: '08.2017',
     experienceDate3: '02.2014 – 03.2014',
+
+    htmlSkills: [
+      'HTML', 'CSS/SASS', 'Styled Components', 'Flex', 'Bootstrap', 'BEM', 'RWD'
+    ],
+    jsSkills: ['JavaScript/ES6', 'React/Redux', ' Vue/Vuex', 'TypeScript'],
+    databaseSkills: ['GraphQL', 'SQL'],
+    terminalSkills: ['Git', 'terminal'],
+    OOPSkill: 'Object-oriented programming',
+    otherSkills: ['SCRUM', 'Jira', 'teamwork'],
+    languageSkill: 'English B2',
 
     skills1: 'Internet technology:',
     skills2: 'Object-oriented programming:',
@@ -40,7 +53,7 @@ export default {
     welcome: 'Witaj!',
     aboutMe: 'O mnie',
     aboutMeDescription:
-            'Nazywam się Artur Kwiatkowski. Jestem inżynierem informatyki Uniwersytetu im. Adama Mickiewicza w Poznaniu. W kwietniu 2019 roku przeprowadziłem się do Krakowa. Od ponad roku pracuję jako front-end developer. W swojej pracy głównie wykorzystuję Vue.js i React.js.',
+            'Nazywam się Artur Kwiatkowski. Jestem inżynierem informatyki Uniwersytetu im. Adama Mickiewicza w Poznaniu. W kwietniu 2019 roku przeprowadziłem się do Krakowa. Od ponad roku pracuję jako front-end developer w DevAndDeliver. W mojej pracy głównie wykorzystuję Vue.js i React.js. Doceniam miłą atmosferę, pracę zespołową i dobrą kawę',
     education: 'Wykształcenie',
     experience: 'Doświadczenie',
     skills: 'Umiejętności',

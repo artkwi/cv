@@ -34,11 +34,36 @@ const MainPage = () => {
             </Styled.ProfileSignatureWrapper>
           </Styled.ProfileImageWrapper>
           <Styled.AboutMeDescription>
-            {c[lang].aboutMeDescription}
+            {c[lang].aboutMeDescription}&#9749;
           </Styled.AboutMeDescription>
         </Styled.Section>
-
         <Slide left delay={300}>
+          <SectionTitle
+            id={'skills'}
+            title={c[lang].skills}
+          ></SectionTitle>
+          <Styled.Section>
+            <Styled.SectionInner>
+              <Styled.Description>
+                {c[lang].htmlSkills.join(', ')}
+              </Styled.Description>
+              <Styled.Description>
+                {c[lang].jsSkills.join(', ')}
+              </Styled.Description>
+              <Styled.Description>
+                {c[lang].databaseSkills.join(', ')}
+              </Styled.Description>
+              <Styled.Description>
+                {c[lang].OOPSkill}
+              </Styled.Description>
+              <Styled.Description>
+                {c[lang].otherSkills.join(', ')}
+              </Styled.Description>
+              <Styled.Description>
+                {c[lang].languageSkill}
+              </Styled.Description>
+            </Styled.SectionInner>
+          </Styled.Section>
           <SectionTitle
             id={'education'}
             title={c[lang].education}
@@ -65,6 +90,10 @@ const MainPage = () => {
           ></SectionTitle>
           <Styled.Section>
             <Styled.SectionInner>
+              <Styled.Dates>{c[lang].experienceDate0}</Styled.Dates>
+              <Styled.Description>
+                {c[lang].experience0}
+              </Styled.Description>
               <Styled.Dates>{c[lang].experienceDate1}</Styled.Dates>
               <Styled.Description>
                 {c[lang].experience1}
@@ -79,26 +108,7 @@ const MainPage = () => {
               </Styled.Description>
             </Styled.SectionInner>
           </Styled.Section>
-          <SectionTitle
-            id={'skills'}
-            title={c[lang].skills}
-          ></SectionTitle>
-          <Styled.Section>
-            <Styled.SectionInner>
-              <Styled.Dates>10.2015 – 03.2019</Styled.Dates>
-              <Styled.Description>
-                {c[lang].skills1}
-              </Styled.Description>
-              <Styled.Dates>10.2017 – 03.2018</Styled.Dates>
-              <Styled.Description>
-                {c[lang].skills2}
-              </Styled.Description>
-              <Styled.Dates>09.2011 – 04.2015</Styled.Dates>
-              <Styled.Description>
-                {c[lang].skills3}
-              </Styled.Description>
-            </Styled.SectionInner>
-          </Styled.Section>
+
           <SectionTitle
             id={'contact'}
             title={c[lang].contact}

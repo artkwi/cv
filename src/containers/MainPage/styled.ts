@@ -124,7 +124,8 @@ export const ProfileSignature = styled.p`
 export const AboutMeDescription = styled.p`
     padding: 80px 40px 140px;
     position: relative;
-
+    line-height: 1.4;
+    
     &:after {
         content: '';
         position: absolute;
