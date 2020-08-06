@@ -5,9 +5,9 @@ export const Heading = styled.h2`
     align-items: center;
     justify-content: center;
     height: 50px;
-    font-size: ${({ theme }) => (theme.fontSize.xl)}px;
+    font-size: ${({ theme }) => (theme.fontSize.xxl)}px;
     font-weight: 700;
-    color: #f7b226;
+    color: ${({ theme }) => theme.colors.h2};
     z-index: 1;
     position: relative;
 `;

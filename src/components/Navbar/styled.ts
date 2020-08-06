@@ -27,7 +27,7 @@ export const Nav = styled.nav<{ isOpen: boolean }>`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 20px;
+    font-size: ${({ theme }) => (theme.fontSize.l)}px;
     letter-spacing: 5px;
     opacity: 0;
     animation: ${navAnimation} 0.5s ease-out 1s forwards;
@@ -35,7 +35,7 @@ export const Nav = styled.nav<{ isOpen: boolean }>`
     ${media.greaterThan('medium')`
     justify-content: flex-start;
     height: unset;
-    font-size: 18px;
+    font-size: ${({ theme }) => (theme.fontSize.m)}px;
     letter-spacing: 1px;
     `}
 `;
@@ -43,7 +43,7 @@ export const Nav = styled.nav<{ isOpen: boolean }>`
 export const Item = styled.li`
     position: relative;
     z-index: 45;
-    background-color: #2b6b99a6;
+    background-color: ${({ theme }) => theme.colors.blueHard};
     height: 100%;
     padding: 20px;
     text-align: center;
@@ -54,7 +54,7 @@ export const Item = styled.li`
         content: '';
         display: block;
         position: absolute;
-        background-color: #ffffff;
+        background-color: ${({ theme }) => theme.colors.white};
         opacity: 0.8;
         top: 0;
         bottom: 0;
@@ -70,7 +70,7 @@ export const Item = styled.li`
     }
 
     &:hover {
-        color: #000000;
+        color: ${({ theme }) => theme.colors.black};
         &:after {
             transform: translate(-50%, -50%) scale(1);
         }
@@ -132,7 +132,7 @@ export const MenuBtn = styled.button<{ isOpen: boolean }>`
         position: absolute;
         border-radius: 50%;
         display: block;
-        background-color: #2b6b99a6;
+        background-color:${({ theme }) => theme.colors.blueHard};
         width: 50px;
         height: 50px;
         left: 50%;
