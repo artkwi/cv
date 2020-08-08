@@ -15,7 +15,7 @@ const Contact: React.FunctionComponent = () => {
       <Styled.IconWrapper href="https://github.com/artkwi" target="_blank" title="GitHub">
         <IconManager name='GitHub' />
       </Styled.IconWrapper>
-      <Styled.IconWrapper>
+      <Styled.IconWrapper title="CV">
         <IconManager name='CV' />
       </Styled.IconWrapper>
     </Styled.Wrapper>
