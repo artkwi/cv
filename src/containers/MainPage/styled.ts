@@ -81,8 +81,6 @@ export const ProfileBackground = styled.img`
     bottom: 0;
     width: 100%;
     min-height: 100%;
-    /* height: auto; */
-    /* width: auto; */
 
     ${media.greaterThan('medium')` 
         width: 100%;
@@ -109,10 +107,10 @@ export const ProfileImage = styled.img`
     height: auto;
     transition: all 0.5s;
     transform: scale(1.05);
-    filter: grayscale(100%);
+    /* filter: grayscale(100%); */
     &:hover {
         transform: scale(1);
-        filter: grayscale(0);
+        /* filter: grayscale(0); */
     }
 `;
 
