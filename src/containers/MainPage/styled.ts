@@ -2,22 +2,18 @@ import styled, { keyframes } from 'styled-components';
 import media from 'styled-media-query';
 
 const underlineAnimation = keyframes`
-    0%   {width: 0%}
+    0%   {width: 0%;}
     100% {width: 95%;}  
 `;
 
 const underlineDescriptionAnimation = keyframes`
-    0%   {width: 0%}
+    0%   {width: 0%;}
     100% {width: 50%;}  
 `;
 
 const fadeInAnimation = keyframes`
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 `;
 
 export const Main = styled.main`
@@ -25,6 +21,22 @@ export const Main = styled.main`
     letter-spacing: 1px;
     font-family: Roboto, sans-serif;
     background-color: ${({ theme }) => theme.colors.black};
+`;
+
+export const LanguageButton = styled.button`
+    position: absolute;
+    z-index: 9;
+    top: 15px;
+    left: 0;
+    font-size: 45px;
+    display: flex;
+    opacity: 0;
+    padding-left: 8px;
+    animation: ${fadeInAnimation} 1s ease-out 1s forwards;
+
+    ${media.greaterThan('medium')`
+        top: 60px;
+    `}
 `;
 
 export const AnimatedBackground = styled.div`
@@ -105,7 +117,7 @@ export const ProfileSignatureWrapper = styled.div`
 export const ProfileSignature = styled.p`
     position: relative;
     color: #0000008a;
-    font-size: ${({ theme }) => (theme.fontSize.xl)}px;
+    font-size: ${({ theme }) => theme.fontSize.xl}px;
     font-weight: 700;
     letter-spacing: 3px;
 
@@ -125,7 +137,7 @@ export const AboutMeDescription = styled.p`
     padding: 80px 40px 140px;
     position: relative;
     line-height: 1.4;
-    
+
     &:after {
         content: '';
         position: absolute;
@@ -142,7 +154,7 @@ export const AboutMeDescription = styled.p`
 
 export const Dates = styled.p`
     color: ${({ theme }) => theme.colors.dates};
-    font-size: ${({ theme }) => (theme.fontSize.xxs)}px;
+    font-size: ${({ theme }) => theme.fontSize.xxs}px;
 `;
 
 export const Description = styled.p`

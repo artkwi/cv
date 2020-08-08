@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import * as Styled from './styled';
-import { Contact, SectionTitle, Navbar } from './../../components';
+import { Contact, SectionTitle, Navbar, IconManager } from './../../components';
 import profileImg from './../../assets/images/profile-image.jpg';
 import aboutBackground from './../../assets/images/winter-bg.jpg';
 import c from './../../shared/copy/mainPage';
@@ -9,15 +9,21 @@ import ParticlesBg from 'particles-bg';
 import Slide from 'react-reveal/Slide';
 
 const MainPage = () => {
-  const lang = 'EN';
+  const [lang, setLang] = useState('EN');
+  const changeLanguage = () => {
+    lang === 'EN' ? setLang('PL') : setLang('EN');
+  }
 
   return (
     <>
-      <Navbar />
+      <Navbar lang={lang}/>
       <Styled.Main>
         <Styled.AnimatedBackground>
           <ParticlesBg type="lines" num={12} />
         </Styled.AnimatedBackground>
+        <Styled.LanguageButton onClick={() => changeLanguage()}>
+          <IconManager name={lang === 'EN' ? 'ENFlag' : 'PLFlag'} />
+        </Styled.LanguageButton>
         <Styled.Section id="about-me">
           <Styled.ProfileImageWrapper>
             <Styled.ProfileBackground
