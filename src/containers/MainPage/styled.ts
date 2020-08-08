@@ -80,7 +80,14 @@ export const ProfileBackground = styled.img`
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: auto;
+    min-height: 100%;
+    /* height: auto; */
+    /* width: auto; */
+
+    ${media.greaterThan('medium')` 
+        width: 100%;
+        height: auto;
+    `}
 `;
 
 export const Figure = styled.figure`
