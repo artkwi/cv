@@ -43,7 +43,7 @@ export const Nav = styled.nav<{ isOpen: boolean }>`
 export const Item = styled.li`
     position: relative;
     z-index: 45;
-    background-color: ${({ theme }) => theme.colors.blueHard};
+    background-color: ${({ theme }) => theme.colors.purpleTransparent};
     height: 100%;
     padding: 20px;
     text-align: center;
@@ -132,7 +132,7 @@ export const MenuBtn = styled.button<{ isOpen: boolean }>`
         position: absolute;
         border-radius: 50%;
         display: block;
-        background-color:${({ theme }) => theme.colors.blueHard};
+        background-color:${({ theme }) => theme.colors.purpleTransparent};
         width: 50px;
         height: 50px;
         left: 50%;

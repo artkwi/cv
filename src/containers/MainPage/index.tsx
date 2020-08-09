@@ -3,10 +3,13 @@ import * as Styled from './styled';
 import { Contact, SectionTitle, Navbar, IconManager } from './../../components';
 import profileImg from './../../assets/images/profile-image.jpg';
 import aboutBackground from './../../assets/images/winter-bg.jpg';
+// import skillsSVG from './../../assets/images/skills.svg';
 import c from './../../shared/copy/mainPage';
 import ParticlesBg from 'particles-bg';
 // @ts-ignore
 import Slide from 'react-reveal/Slide';
+// import { Parallax } from 'react-scroll-parallax';
+import Skills from './../../components/Sills'
 
 const MainPage = () => {
   const [lang, setLang] = useState('EN');
@@ -48,7 +51,10 @@ const MainPage = () => {
             id={'skills'}
             title={c[lang].skills}
           ></SectionTitle>
-          <Styled.Section>
+          <Skills lang={lang} />
+          {/* <Parallax className="custom-class" y={[0, 40]} tagOuter="figure"> */}
+          {/* <Styled.Section>
+            <img src={skillsSVG} alt="" />
             <Styled.SectionInner>
               <Styled.Description>
                 {c[lang].htmlSkills.join(', ')}
@@ -69,7 +75,8 @@ const MainPage = () => {
                 {c[lang].languageSkill}
               </Styled.Description>
             </Styled.SectionInner>
-          </Styled.Section>
+          </Styled.Section> */}
+          {/* </Parallax> */}
           <SectionTitle
             id={'education'}
             title={c[lang].education}

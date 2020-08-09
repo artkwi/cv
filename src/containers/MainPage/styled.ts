@@ -49,7 +49,7 @@ export const AnimatedBackground = styled.div`
 export const Section = styled.section`
     font-family: Exo, sans-serif;
     padding: 15px;
-    text-align: center;
+    text-align: left;
 
     &:first-of-type {
         /* height: 100vh; */
@@ -63,6 +63,7 @@ export const SectionInner = styled.div`
     clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
     background-color: ${({ theme }) => theme.colors.sectionInner};
     padding: 80px 40px;
+    position: relative;
 `;
 
 export const ProfileImageWrapper = styled.div`
