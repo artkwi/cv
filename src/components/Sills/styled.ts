@@ -24,6 +24,19 @@ const bar = keyframes`
     }
 `;
 
+const leaf = keyframes`
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(7deg);
+    }
+    }
+    100% {
+         transform: rotate(0deg);
+    }
+`;
+
 export const SectionStyled = styled(Section)``;
 
 export const SectionInnerStyled = styled(SectionInner)``;
@@ -61,6 +74,26 @@ export const SkillsStyled = styled(IconManager)`
     #bar5 {
         animation-delay: 2s;
     }
+
+    #leaf1, #leaf2 {
+        animation: ${leaf} 4s linear alternate infinite;
+        transform-origin: bottom;
+        transform-box: fill-box;
+    }
+
+    #leaf2 {
+        animation: ${leaf} 4s linear alternate infinite;
+        animation-delay: 2s;
+        transform-origin: bottom;
+        transform-box: fill-box;
+    }
+
+    #head {
+        animation: ${leaf} 4s linear alternate infinite;
+        transform-origin: bottom;
+        transform-box: fill-box;
+    }
+
 
     ${media.greaterThan('medium')`
     font-size: 500px;
