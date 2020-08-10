@@ -9,7 +9,7 @@ import ParticlesBg from 'particles-bg';
 // @ts-ignore
 import Slide from 'react-reveal/Slide';
 // import { Parallax } from 'react-scroll-parallax';
-import Skills from './../../components/Sills'
+import Skills from '../../components/Skills'
 
 const MainPage = () => {
   const [lang, setLang] = useState('EN');
@@ -52,31 +52,6 @@ const MainPage = () => {
             title={c[lang].skills}
           ></SectionTitle>
           <Skills lang={lang} />
-          {/* <Parallax className="custom-class" y={[0, 40]} tagOuter="figure"> */}
-          {/* <Styled.Section>
-            <img src={skillsSVG} alt="" />
-            <Styled.SectionInner>
-              <Styled.Description>
-                {c[lang].htmlSkills.join(', ')}
-              </Styled.Description>
-              <Styled.Description>
-                {c[lang].jsSkills.join(', ')}
-              </Styled.Description>
-              <Styled.Description>
-                {c[lang].databaseSkills.join(', ')}
-              </Styled.Description>
-              <Styled.Description>
-                {c[lang].OOPSkill}
-              </Styled.Description>
-              <Styled.Description>
-                {c[lang].otherSkills.join(', ')}
-              </Styled.Description>
-              <Styled.Description>
-                {c[lang].languageSkill}
-              </Styled.Description>
-            </Styled.SectionInner>
-          </Styled.Section> */}
-          {/* </Parallax> */}
           <SectionTitle
             id={'education'}
             title={c[lang].education}

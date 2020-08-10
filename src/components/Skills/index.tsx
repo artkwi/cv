@@ -1,6 +1,6 @@
 import * as Styled from './styled';
 import React from 'react';
-import c from './../../shared/copy/mainPage';
+import c from '../../shared/copy/mainPage';
 
 interface IProps {
     lang: string;

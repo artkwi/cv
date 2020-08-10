@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 import media from 'styled-media-query';
-import { Section, SectionInner } from './../../containers/MainPage/styled';
-import { IconManager } from './../../components';
+import { Section, SectionInner } from '../../containers/MainPage/styled';
+import { IconManager } from '..';
 
 const bar = keyframes`
     0% {
@@ -25,6 +25,19 @@ const bar = keyframes`
 `;
 
 const leaf = keyframes`
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(40deg);
+    }
+    }
+    100% {
+         transform: rotate(0deg);
+    }
+`;
+
+const head = keyframes`
     0% {
         transform: rotate(0deg);
     }
@@ -89,7 +102,7 @@ export const SkillsStyled = styled(IconManager)`
     }
 
     #head {
-        animation: ${leaf} 4s linear alternate infinite;
+        animation: ${head} 4s linear alternate infinite;
         transform-origin: bottom;
         transform-box: fill-box;
     }
