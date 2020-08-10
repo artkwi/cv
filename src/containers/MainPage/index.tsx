@@ -10,6 +10,7 @@ import ParticlesBg from 'particles-bg';
 import Slide from 'react-reveal/Slide';
 // import { Parallax } from 'react-scroll-parallax';
 import Skills from '../../components/Skills'
+import Education from '../../components/Education'
 
 const MainPage = () => {
   const [lang, setLang] = useState('EN');
@@ -56,22 +57,7 @@ const MainPage = () => {
             id={'education'}
             title={c[lang].education}
           ></SectionTitle>
-          <Styled.Section>
-            <Styled.SectionInner>
-              <Styled.Dates>{c[lang].educationDate1}</Styled.Dates>
-              <Styled.Description>
-                {c[lang].education1}
-              </Styled.Description>
-              <Styled.Dates>{c[lang].educationDate2}</Styled.Dates>
-              <Styled.Description>
-                {c[lang].education2}
-              </Styled.Description>
-              <Styled.Dates>{c[lang].educationDate3}</Styled.Dates>
-              <Styled.Description>
-                {c[lang].education3}
-              </Styled.Description>
-            </Styled.SectionInner>
-          </Styled.Section>
+          <Education lang={lang} />
           <SectionTitle
             id={'work-experience'}
             title={c[lang].experience}
