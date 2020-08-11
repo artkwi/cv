@@ -29,6 +29,6 @@ export const IconWrapper = styled.a`
     }
 
     ${media.greaterThan('medium')`
-        font-size: 60px;
+        font-size: 55px;
     `}
 `;

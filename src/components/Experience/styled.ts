@@ -1,7 +1,11 @@
 import styled, { keyframes } from 'styled-components';
 import media from 'styled-media-query';
-import { Section, SectionInner } from '../../containers/MainPage/styled';
 import { IconManager } from '..';
+import {
+  Description,
+  Section,
+  SectionInner
+} from '../../containers/MainPage/styled';
 
 const arm = keyframes`
     0% {
@@ -59,15 +63,8 @@ export const Dates = styled.p`
     font-size: ${({ theme }) => theme.fontSize.xxs}px;
 `;
 
-export const Description = styled.p`
-    color: ${({ theme }) => theme.colors.textDescription};
-    padding: 20px 0 40px;
-    max-width: unset;
+export const DescriptionStyled = styled(Description)`
     margin-right: auto;
-    
-    ${media.greaterThan('medium')`
-        max-width: 50%;
-    `}
 `;
 
 export const ExperienceSVG = styled(IconManager)`

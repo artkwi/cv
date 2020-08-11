@@ -1,7 +1,11 @@
 import styled, { keyframes } from 'styled-components';
 import media from 'styled-media-query';
-import { Section, SectionInner } from '../../containers/MainPage/styled';
 import { IconManager } from '..';
+import {
+  Description,
+  Section,
+  SectionInner
+} from '../../containers/MainPage/styled';
 
 const bar = keyframes`
     0% {
@@ -59,10 +63,7 @@ export const Dates = styled.p`
     font-size: ${({ theme }) => theme.fontSize.xxs}px;
 `;
 
-export const Description = styled.p`
-    color: ${({ theme }) => theme.colors.textDescription};
-    padding: 20px 0 40px;
-`;
+export const DescriptionStyled = styled(Description)``;
 
 export const SkillsStyled = styled(IconManager)`
     font-size: 170px;
@@ -85,7 +86,8 @@ export const SkillsStyled = styled(IconManager)`
         animation-delay: 2s;
     }
 
-    #leaf1, #leaf2 {
+    #leaf1,
+    #leaf2 {
         animation: ${leaf} 4s linear alternate infinite;
         transform-origin: bottom;
         transform-box: fill-box;
@@ -103,7 +105,6 @@ export const SkillsStyled = styled(IconManager)`
         transform-origin: bottom;
         transform-box: fill-box;
     }
-
 
     ${media.greaterThan('medium')`
         font-size: 500px;

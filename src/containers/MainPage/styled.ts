@@ -144,6 +144,7 @@ export const AboutMeDescription = styled.p`
     position: relative;
     line-height: 1.4;
     text-align: center;
+    margin: 0 auto;
 
     &:after {
         content: '';
@@ -157,6 +158,13 @@ export const AboutMeDescription = styled.p`
         transform: translate(-50%, 0);
         animation: ${underlineDescriptionAnimation} 0.5s ease-out 1s forwards;
     }
+
+
+    ${media.greaterThan('medium')`
+        max-width: 50%;
+    `}
+
+
 `;
 
 export const Dates = styled.p`
@@ -167,4 +175,9 @@ export const Dates = styled.p`
 export const Description = styled.p`
     color: ${({ theme }) => theme.colors.textDescription};
     padding: 20px 0 40px;
+    margin-right: auto;
+    
+    ${media.greaterThan('medium')`
+        max-width: 50%;
+    `}
 `;

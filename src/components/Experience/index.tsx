@@ -12,21 +12,21 @@ const Experience: React.FunctionComponent<IProps> = ({ lang }) => {
       <Styled.SectionInnerStyled>
         <Styled.ExperienceSVG name={'experience'} />
         <Styled.Dates>{c[lang].experienceDate0}</Styled.Dates>
-        <Styled.Description>
+        <Styled.DescriptionStyled>
           {c[lang].experience0}
-        </Styled.Description>
+        </Styled.DescriptionStyled>
         <Styled.Dates>{c[lang].experienceDate1}</Styled.Dates>
-        <Styled.Description>
+        <Styled.DescriptionStyled>
           {c[lang].experience1}
-        </Styled.Description>
+        </Styled.DescriptionStyled>
         <Styled.Dates>{c[lang].experienceDate2}</Styled.Dates>
-        <Styled.Description>
+        <Styled.DescriptionStyled>
           {c[lang].experience2}
-        </Styled.Description>
+        </Styled.DescriptionStyled>
         <Styled.Dates>{c[lang].experienceDate3}</Styled.Dates>
-        <Styled.Description>
+        <Styled.DescriptionStyled>
           {c[lang].experience3}
-        </Styled.Description>
+        </Styled.DescriptionStyled>
       </Styled.SectionInnerStyled>
     </Styled.SectionStyled>
   );

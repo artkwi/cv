@@ -12,17 +12,17 @@ const Education: React.FunctionComponent<IProps> = ({ lang }) => {
       <Styled.SectionInnerStyled>
         <Styled.EducationSVG name={'education'} />
         <Styled.Dates>{c[lang].educationDate1}</Styled.Dates>
-        <Styled.Description>
+        <Styled.DescriptionStyled>
           {c[lang].education1}
-        </Styled.Description>
+        </Styled.DescriptionStyled>
         <Styled.Dates>{c[lang].educationDate2}</Styled.Dates>
-        <Styled.Description>
+        <Styled.DescriptionStyled>
           {c[lang].education2}
-        </Styled.Description>
+        </Styled.DescriptionStyled>
         <Styled.Dates>{c[lang].educationDate3}</Styled.Dates>
-        <Styled.Description>
+        <Styled.DescriptionStyled>
           {c[lang].education3}
-        </Styled.Description>
+        </Styled.DescriptionStyled>
       </Styled.SectionInnerStyled>
     </Styled.SectionStyled>
   );

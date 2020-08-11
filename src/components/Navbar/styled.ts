@@ -49,6 +49,7 @@ export const Item = styled.li`
     text-align: center;
     font-family: Exo, sans-serif;
     overflow: hidden;
+    cursor: pointer;
 
     &:after {
         content: '';

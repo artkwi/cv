@@ -15,24 +15,24 @@ const Skills: React.FunctionComponent<IProps> = ({ lang }) => {
         <Styled.SkillsStyled name={'skills'} />
         {/* </Parallax> */}
         {/* <Parallax className="custom-class" x={[-100, 0]} tagOuter="figure"> */}
-        <Styled.Description>
+        <Styled.DescriptionStyled>
           {c[lang].htmlSkills.join(', ')}
-        </Styled.Description>
-        <Styled.Description>
+        </Styled.DescriptionStyled>
+        <Styled.DescriptionStyled>
           {c[lang].jsSkills.join(', ')}
-        </Styled.Description>
-        <Styled.Description>
+        </Styled.DescriptionStyled>
+        <Styled.DescriptionStyled>
           {c[lang].databaseSkills.join(', ')}
-        </Styled.Description>
-        <Styled.Description>
+        </Styled.DescriptionStyled>
+        <Styled.DescriptionStyled>
           {c[lang].OOPSkill}
-        </Styled.Description>
-        <Styled.Description>
+        </Styled.DescriptionStyled>
+        <Styled.DescriptionStyled>
           {c[lang].otherSkills.join(', ')}
-        </Styled.Description>
-        <Styled.Description>
+        </Styled.DescriptionStyled>
+        <Styled.DescriptionStyled>
           {c[lang].languageSkill}
-        </Styled.Description>
+        </Styled.DescriptionStyled>
         {/* </Parallax> */}
       </Styled.SectionInnerStyled>
     </Styled.SectionStyled>

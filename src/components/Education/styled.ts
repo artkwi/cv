@@ -1,7 +1,11 @@
 import styled, { keyframes } from 'styled-components';
 import media from 'styled-media-query';
-import { Section, SectionInner } from '../../containers/MainPage/styled';
 import { IconManager } from '..';
+import {
+  Description,
+  Section,
+  SectionInner
+} from '../../containers/MainPage/styled';
 
 const diploma = keyframes`
    0% {
@@ -38,14 +42,8 @@ export const Dates = styled.p`
     font-size: ${({ theme }) => theme.fontSize.xxs}px;
 `;
 
-export const Description = styled.p`
-    color: ${({ theme }) => theme.colors.textDescription};
-    padding: 20px 0 40px;
-    max-width: unset;
+export const DescriptionStyled = styled(Description)`
     margin-left: auto;
-    ${media.greaterThan('medium')`
-        max-width: 50%;
-    `}
 `;
 
 export const EducationSVG = styled(IconManager)`
@@ -64,7 +62,8 @@ export const EducationSVG = styled(IconManager)`
         transform: rotate(-20deg) translate(30px, 0px);
     }
 
-    #top, #pompon {
+    #top,
+    #pompon {
         animation: ${head} 4s linear alternate infinite;
         transform-origin: top;
         transform-box: fill-box;
