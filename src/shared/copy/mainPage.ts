@@ -55,7 +55,7 @@ I appreciate the nice atmosphere, teamwork and good coffee `,
     skills: 'Umiejętności',
     contact: 'Kontakt',
     education1:
-            'Uniwersytet im. Adama Mickiewicza w Poznaniu na Wydziale Matematyki i Informatyki - tytuł inżyniera1',
+            'Uniwersytet im. Adama Mickiewicza w Poznaniu na Wydziale Matematyki i Informatyki - tytuł inżyniera',
     education2:
             'Università della Calabria - studia z programu Erasmus+ we Włoszech',
     education3:

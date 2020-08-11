@@ -65,12 +65,9 @@ export const Description = styled.p`
 `;
 
 export const SkillsStyled = styled(IconManager)`
-    font-size: 200px;
-    position: absolute;
-
     font-size: 170px;
     position: absolute;
-    right: 40px;
+    right: 45px;
     bottom: 15px;
 
     #bar1,
@@ -109,9 +106,9 @@ export const SkillsStyled = styled(IconManager)`
 
 
     ${media.greaterThan('medium')`
-    font-size: 500px;
-    position: absolute;
-    right: 50px;
-    bottom: 0;
+        font-size: 500px;
+        position: absolute;
+        right: 45px;
+        bottom: 0;
     `}
 `;

@@ -11,6 +11,7 @@ import Slide from 'react-reveal/Slide';
 // import { Parallax } from 'react-scroll-parallax';
 import Skills from '../../components/Skills'
 import Education from '../../components/Education'
+import Experience from '../../components/Experience'
 
 const MainPage = () => {
   const [lang, setLang] = useState('EN');
@@ -62,27 +63,7 @@ const MainPage = () => {
             id={'work-experience'}
             title={c[lang].experience}
           ></SectionTitle>
-          <Styled.Section>
-            <Styled.SectionInner>
-              <Styled.Dates>{c[lang].experienceDate0}</Styled.Dates>
-              <Styled.Description>
-                {c[lang].experience0}
-              </Styled.Description>
-              <Styled.Dates>{c[lang].experienceDate1}</Styled.Dates>
-              <Styled.Description>
-                {c[lang].experience1}
-              </Styled.Description>
-              <Styled.Dates>{c[lang].experienceDate2}</Styled.Dates>
-              <Styled.Description>
-                {c[lang].experience2}
-              </Styled.Description>
-              <Styled.Dates>{c[lang].experienceDate3}</Styled.Dates>
-              <Styled.Description>
-                {c[lang].experience3}
-              </Styled.Description>
-            </Styled.SectionInner>
-          </Styled.Section>
-
+          <Experience lang={lang} />
           <SectionTitle
             id={'contact'}
             title={c[lang].contact}

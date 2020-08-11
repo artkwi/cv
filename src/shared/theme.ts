@@ -4,6 +4,7 @@ export default {
     black: '#000000',
     blueDark: '#00204a',
     blueHard: '#2b6b99a6',
+    purple: '#6C63FF',
     purpleTransparent: '#6c63feb3',
     blue: '#6da8ff',
     heavenly: '#d9faff',
