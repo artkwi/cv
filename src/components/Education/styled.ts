@@ -44,6 +44,7 @@ export const Dates = styled.p`
 
 export const DescriptionStyled = styled(Description)`
     margin-left: auto;
+    margin-right: unset;
 `;
 
 export const EducationSVG = styled(IconManager)`

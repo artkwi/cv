@@ -1,11 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 import media from 'styled-media-query';
 
-const underlineAnimation = keyframes`
-    0%   {width: 0%;}
-    100% {width: 95%;}  
-`;
-
 const underlineDescriptionAnimation = keyframes`
     0%   {width: 0%;}
     100% {width: 50%;}  
@@ -70,22 +65,61 @@ export const ProfileImageWrapper = styled.div`
     position: relative;
     width: 100%;
     display: flex;
-    flex-direction: column;
-    padding: 100px 0 40px 0;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    height: 450px;
     overflow: hidden;
 `;
 
-export const ProfileBackground = styled.img`
+export const ProfileBackground1 = styled.img`
     position: absolute;
     bottom: 0;
     width: 100%;
     min-height: 100%;
+    z-index:2;
+    top: -212px;
 
-    ${media.greaterThan('medium')` 
+    ${media.greaterThan('medium')`
         width: 100%;
         height: auto;
+    `}
+`;
+export const ProfileBackground = styled.div`
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+`;
+
+export const ProfileBackgroundTop = styled.div`
+    background-color: transparent;
+    height: 50%;
+`;
+
+export const ProfileBackgroundBottomWrapper = styled.div`
+    height: 50%;
+`;
+
+export const ProfileBackgroundBottom = styled.div`
+    background-color: ${({ theme }) => theme.colors.purple};
+    background-image: linear-gradient(to right bottom, #191919, #2e2b4c, #413e84, #5550c0, #6c63ff);
+    height: 50%;
+`;
+
+export const ProfileInfoWrapper = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    padding: 10px 40px;
+    flex-direction: column;
+    margin-top: 70px;
+    
+    ${media.greaterThan('medium')`
+        flex-direction: row;
+        margin-top: 0;
     `}
 `;
 
@@ -96,10 +130,12 @@ export const Figure = styled.figure`
     overflow: hidden;
     border-radius: 50%;
     border: 2px solid ${({ theme }) => theme.colors.white};
+    filter: drop-shadow(2px 4px 6px black);
 
     ${media.greaterThan('medium')`
         width: 200px;
         height: 200px;
+        margin-bottom: 40px;
     `}
 `;
 
@@ -115,36 +151,30 @@ export const ProfileImage = styled.img`
     }
 `;
 
-export const ProfileSignatureWrapper = styled.div`
-    overflow: hidden;
-    margin-top: 40px;
-`;
-
-export const ProfileSignature = styled.p`
+export const ProfileSignature = styled.h1`
+z-index: 5;
+filter: drop-shadow(2px 4px 6px black);
     position: relative;
-    color: #0000008a;
+    color: #FFFFFF;
     font-size: ${({ theme }) => theme.fontSize.xl}px;
+    font-size: 40px;
     font-weight: 700;
     letter-spacing: 3px;
+    margin-top: 30px;
+    text-align: center;
 
-    &:before {
-        content: '';
-        display: block;
-        width: 0%;
-        height: 3px;
-        background-color: #0000008a;
-        margin: auto;
-        margin-bottom: 2px;
-        animation: ${underlineAnimation} 0.5s ease-out 1.5s forwards;
-    }
+    ${media.greaterThan('medium')`
+        margin-top: 60px;
+    `}
 `;
 
 export const AboutMeDescription = styled.p`
     padding: 80px 40px 140px;
     position: relative;
-    line-height: 1.4;
+    line-height: 1.5;
     text-align: center;
     margin: 0 auto;
+    font-size: ${({ theme }) => theme.fontSize.l}px;
 
     &:after {
         content: '';
@@ -159,12 +189,9 @@ export const AboutMeDescription = styled.p`
         animation: ${underlineDescriptionAnimation} 0.5s ease-out 1s forwards;
     }
 
-
     ${media.greaterThan('medium')`
-        max-width: 50%;
+        max-width: 60%;
     `}
-
-
 `;
 
 export const Dates = styled.p`
@@ -176,6 +203,7 @@ export const Description = styled.p`
     color: ${({ theme }) => theme.colors.textDescription};
     padding: 20px 0 40px;
     margin-right: auto;
+    line-height: 1.7;
     
     ${media.greaterThan('medium')`
         max-width: 50%;
