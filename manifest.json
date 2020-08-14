@@ -3,18 +3,18 @@
   "name": "Artur Kwiatkowski",
   "icons": [
     {
-      "src": "tab-profile.png",
+      "src": "public/tab-profile.ico",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/png"
+      "type": "ico"
     },
     {
-      "src": "tab-profile.png",
-      "type": "image/png",
+      "src": "public/tab-profile.ico",
+      "type": "ico",
       "sizes": "192x192"
     },
     {
-      "src": "tab-profile.png",
-      "type": "image/png",
+      "src": "public/tab-profile.ico",
+      "type": "ico",
       "sizes": "512x512"
     }
   ],
