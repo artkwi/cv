@@ -55,6 +55,7 @@ export const EducationSVG = styled(IconManager)`
     left: 40px;
     top: 120px;
     z-index: -1;
+    transition: font-size 0.5s;
 
     #diploma {
         animation: ${diploma} 5s linear alternate infinite;

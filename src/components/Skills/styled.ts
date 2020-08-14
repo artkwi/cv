@@ -70,6 +70,7 @@ export const SkillsStyled = styled(IconManager)`
     position: absolute;
     right: 45px;
     bottom: 15px;
+    transition: font-size 0.5s;
 
     #bar1,
     #bar2,

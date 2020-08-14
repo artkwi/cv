@@ -74,6 +74,7 @@ export const ExperienceSVG = styled(IconManager)`
     top: 80px;
     z-index: -1;
     right: 45px;
+    transition: font-size 0.5s;
 
     #head {
         animation: ${head} 4s linear alternate infinite;
