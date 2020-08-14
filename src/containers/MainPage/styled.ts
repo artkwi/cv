@@ -10,6 +10,16 @@ const fadeInAnimation = keyframes`
     0% {opacity: 0;}
     100% {opacity: 1;}
 `;
+const aboutAnimation = keyframes`
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);    
+    }
+`;
 
 export const Main = styled.main`
     height: 100%;
@@ -27,7 +37,7 @@ export const LanguageButton = styled.button`
     display: flex;
     opacity: 0;
     margin-left: 8px;
-    animation: ${fadeInAnimation} 1s ease-out 1s forwards;
+    animation: ${fadeInAnimation} 1s ease-out 2s forwards;
 
     ${media.greaterThan('medium')`
         top: 60px;
@@ -142,6 +152,8 @@ export const Figure = styled.figure`
     border-radius: 50%;
     border: 2px solid ${({ theme }) => theme.colors.white};
     filter: drop-shadow(2px 4px 6px black);
+    opacity: 0;
+    animation: ${aboutAnimation} 0.5s ease-out 3s forwards;
 
     ${media.greaterThan('medium')`
         width: 200px;
@@ -172,6 +184,8 @@ export const ProfileSignature = styled.h1`
     text-align: center;
     margin-bottom: 20px;
     transition: font-size 0.5s;
+    opacity: 0;
+    animation: ${aboutAnimation} 0.5s ease-out 2.5s forwards;
 
     ${media.greaterThan('medium')`
         margin-bottom: 0;
@@ -186,7 +200,9 @@ export const AboutMeDescription = styled.p`
     text-align: center;
     margin: 0 auto;
     margin-bottom: 100px;
-    font-size: ${({ theme }) => theme.fontSize.l}px;
+    font-size: ${({ theme }) => theme.fontSize.m}px;
+    opacity: 0;
+    animation: ${aboutAnimation} 0.5s ease-out 2s forwards;
 
     &:after {
         content: '';
@@ -198,11 +214,12 @@ export const AboutMeDescription = styled.p`
         bottom: 0px;
         left: 50%;
         transform: translate(-50%, 0);
-        animation: ${underlineDescriptionAnimation} 0.5s ease-out 1s forwards;
+        animation: ${underlineDescriptionAnimation} 0.5s ease-out 2s forwards;
     }
 
     ${media.greaterThan('medium')`
         max-width: 60%;
+        font-size: ${({ theme }) => theme.fontSize.l}px;
     `}
 `;
 

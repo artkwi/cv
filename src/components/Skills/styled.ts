@@ -68,9 +68,10 @@ export const DescriptionStyled = styled(Description)``;
 export const SkillsStyled = styled(IconManager)`
     font-size: 170px;
     position: absolute;
-    right: 45px;
-    bottom: 15px;
+    right: 40px;
+    bottom: 40px;
     transition: font-size 0.5s;
+    z-index: -1;
 
     #bar1,
     #bar2,
@@ -110,7 +111,6 @@ export const SkillsStyled = styled(IconManager)`
     ${media.greaterThan('medium')`
         font-size: 500px;
         position: absolute;
-        right: 45px;
         bottom: 0;
     `}
 `;

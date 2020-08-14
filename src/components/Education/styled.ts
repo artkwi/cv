@@ -53,7 +53,7 @@ export const EducationSVG = styled(IconManager)`
     font-size: 170px;
     position: absolute;
     left: 40px;
-    top: 120px;
+    top: 135px;
     z-index: -1;
     transition: font-size 0.5s;
 
