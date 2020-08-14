@@ -5,17 +5,17 @@ import { IconManager } from './../../components'
 
 const Contact: React.FunctionComponent = () => {
   return (
-    <Styled.Wrapper>
-      <Styled.IconWrapper href="mailto:kwiatkowski.artur.poczta@gmail.com" target="_blank" title="E-mail: kwiatkowski.artur.poczta@gmail.com">
+    <Styled.Wrapper data-aos="fade-up" data-aos-offset="0">
+      <Styled.IconWrapper href="mailto:kwiatkowski.artur.poczta@gmail.com" target="_blank" title="E-mail: kwiatkowski.artur.poczta@gmail.com" data-aos="fade-right" data-aos-offset="0">
         <IconManager name='Mail' />
       </Styled.IconWrapper>
-      <Styled.IconWrapper href="https://www.linkedin.com/in/artur-kwiatkowski-7b9b71166/" target="_blank" title="LinkedIn">
+      <Styled.IconWrapper href="https://www.linkedin.com/in/artur-kwiatkowski-7b9b71166/" target="_blank" title="LinkedIn" data-aos="fade-right" data-aos-offset="0">
         <IconManager name='LinkedIn' />
       </Styled.IconWrapper>
-      <Styled.IconWrapper href="https://github.com/artkwi" target="_blank" title="GitHub">
+      <Styled.IconWrapper href="https://github.com/artkwi" target="_blank" title="GitHub" data-aos="fade-right" data-aos-offset="0">
         <IconManager name='GitHub' />
       </Styled.IconWrapper>
-      <Styled.IconWrapper title="CV">
+      <Styled.IconWrapper title="CV" data-aos="fade-right" data-aos-offset="0">
         <IconManager name='CV' />
       </Styled.IconWrapper>
     </Styled.Wrapper>

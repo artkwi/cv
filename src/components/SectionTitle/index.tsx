@@ -8,7 +8,7 @@ interface IProps {
 
 const SectionTitle: React.FunctionComponent<IProps> = ({ title, id }) => {
   return (
-    <Styled.Heading id={id}>
+    <Styled.Heading id={id} data-aos="fade-up">
       {title}
     </Styled.Heading>
   )

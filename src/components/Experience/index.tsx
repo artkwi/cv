@@ -8,7 +8,7 @@ interface IProps {
 
 const Experience: React.FunctionComponent<IProps> = ({ lang }) => {
   return (
-    <Styled.SectionStyled>
+    <Styled.SectionStyled data-aos="fade-up">
       <Styled.SectionInnerStyled>
         <Styled.ExperienceSVG name={'experience'} />
         <Styled.Dates>{c[lang].experienceDate0}</Styled.Dates>
