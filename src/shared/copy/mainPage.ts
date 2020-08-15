@@ -24,7 +24,7 @@ I appreciate the nice atmosphere, teamwork and good coffee `,
     educationDate2: '10.2017 – 03.2018',
     educationDate3: '09.2011 – 04.2015',
 
-    experience0: 'DevAndDeliver - front-end developer (Vue, React)',
+    experience0: 'DevAndDeliver - front-end developer (Vue, React, TypeScript)',
     experience1: 'Internship in Żabka Polska - first line of support',
     experience2: 'Internship in Phoenix Contact - .NET programmer',
     experience3:
@@ -65,7 +65,7 @@ I appreciate the nice atmosphere, teamwork and good coffee `,
     educationDate2: '10.2017 – 03.2018',
     educationDate3: '09.2011 – 04.2015',
 
-    experience0: 'DevAndDeliver - programista front-end (Vue, React)',
+    experience0: 'DevAndDeliver - programista front-end (Vue, React, TypeScript)',
     experience1: 'Żabka Polska – stażysta w zespole wsparcia IT',
     experience2:
             'Phoenix Contact – praktyki w dziale IT (programista .NET)',

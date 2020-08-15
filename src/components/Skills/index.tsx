@@ -21,6 +21,9 @@ const Skills: React.FunctionComponent<IProps> = ({ lang }) => {
           {c[lang].databaseSkills.join(', ')}
         </Styled.DescriptionStyled>
         <Styled.DescriptionStyled>
+          {c[lang].terminalSkills.join(', ')}
+        </Styled.DescriptionStyled>
+        <Styled.DescriptionStyled>
           {c[lang].OOPSkill}
         </Styled.DescriptionStyled>
         <Styled.DescriptionStyled>

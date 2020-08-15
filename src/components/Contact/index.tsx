@@ -15,8 +15,8 @@ const Contact: React.FunctionComponent = () => {
       <Styled.IconWrapper href="https://github.com/artkwi" target="_blank" title="GitHub" data-aos="fade-right" data-aos-offset="0">
         <IconManager name='GitHub' />
       </Styled.IconWrapper>
-      <Styled.IconWrapper title="CV" data-aos="fade-right" data-aos-offset="0">
-        <IconManager name='CV' />
+      <Styled.IconWrapper href={process.env.PUBLIC_URL + '/docs/CV-EN.pdf'} target="_blank" title="CV" data-aos="fade-right" data-aos-offset="0">
+        <IconManager name='CV'/>
       </Styled.IconWrapper>
     </Styled.Wrapper>
   );
