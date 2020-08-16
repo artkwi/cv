@@ -7,7 +7,7 @@ const copy: ICopy = {
     welcome: 'Hello!',
     aboutMe: 'About me',
     aboutMeDescription:
-            `My name is Artur Kwiatkowski. I graduated Computer Science at Adam Mickiewicz University in Poznań. I moved to Kraków in April 2019. I have been working in DevAndDeliver as front-end developer for over a year. In my work I mainly use Vue.js and React.js.
+            `My name is Artur Kwiatkowski. I graduated Computer Science at Adam Mickiewicz University in Poznań. I moved to Kraków in April 2019. I have been working in Dev and Deliver as front-end developer for over a year. In my work I mainly use Vue.js and React.js.
 I appreciate the nice atmosphere, teamwork and good coffee `,
     education: 'Education',
     experience: 'Experience',
@@ -24,7 +24,7 @@ I appreciate the nice atmosphere, teamwork and good coffee `,
     educationDate2: '10.2017 – 03.2018',
     educationDate3: '09.2011 – 04.2015',
 
-    experience0: 'DevAndDeliver - front-end developer (Vue, React, TypeScript)',
+    experience0: 'Dev and Deliver - front-end developer (Vue, React, TypeScript)',
     experience1: 'Internship in Żabka Polska - first line of support',
     experience2: 'Internship in Phoenix Contact - .NET programmer',
     experience3:
@@ -49,7 +49,7 @@ I appreciate the nice atmosphere, teamwork and good coffee `,
     welcome: 'Witaj!',
     aboutMe: 'O mnie',
     aboutMeDescription:
-            'Nazywam się Artur Kwiatkowski. Jestem inżynierem informatyki Uniwersytetu im. Adama Mickiewicza w Poznaniu. W kwietniu 2019 roku przeprowadziłem się do Krakowa. Od ponad roku pracuję jako front-end developer w DevAndDeliver. W mojej pracy głównie wykorzystuję Vue.js i React.js. Doceniam miłą atmosferę, pracę zespołową i dobrą kawę ',
+            'Nazywam się Artur Kwiatkowski. Jestem inżynierem informatyki Uniwersytetu im. Adama Mickiewicza w Poznaniu. W kwietniu 2019 roku przeprowadziłem się do Krakowa. Od ponad roku pracuję jako front-end developer w Dev and Deliver. W mojej pracy głównie wykorzystuję Vue.js i React.js. Doceniam miłą atmosferę, pracę zespołową i dobrą kawę ',
     education: 'Wykształcenie',
     experience: 'Doświadczenie',
     skills: 'Umiejętności',
@@ -65,7 +65,7 @@ I appreciate the nice atmosphere, teamwork and good coffee `,
     educationDate2: '10.2017 – 03.2018',
     educationDate3: '09.2011 – 04.2015',
 
-    experience0: 'DevAndDeliver - programista front-end (Vue, React, TypeScript)',
+    experience0: 'Dev and Deliver - programista front-end (Vue, React, TypeScript)',
     experience1: 'Żabka Polska – stażysta w zespole wsparcia IT',
     experience2:
             'Phoenix Contact – praktyki w dziale IT (programista .NET)',
