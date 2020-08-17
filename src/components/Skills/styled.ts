@@ -65,8 +65,7 @@ export const SkillsStyled = styled(IconManager)`
     font-size: 170px;
     position: absolute;
     right: 40px;
-    bottom: 40px;
-    transition: font-size 0.5s;
+    /* bottom: 40px; */
     z-index: -1;
 
     #bar1,
@@ -108,6 +107,6 @@ export const SkillsStyled = styled(IconManager)`
         display: block;
         font-size: 500px;
         position: absolute;
-        bottom: 0;
+        /* bottom: 0; */
     `}
 `;

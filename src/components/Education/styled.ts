@@ -52,7 +52,7 @@ export const EducationSVG = styled(IconManager)`
     font-size: 170px;
     position: absolute;
     left: 40px;
-    top: 135px;
+    /* top: 135px; */
     z-index: -1;
 
     #diploma {
@@ -74,6 +74,6 @@ export const EducationSVG = styled(IconManager)`
         position: absolute;
         left: 50px;
         font-size: 400px;
-        top: 40px;
+        /* top: 40px; */
     `}
 `;

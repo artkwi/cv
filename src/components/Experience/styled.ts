@@ -70,7 +70,7 @@ export const ExperienceSVG = styled(IconManager)`
     position: absolute;
     font-size: 170px;
     position: absolute;
-    top: 80px;
+    /* top: 80px; */
     z-index: -1;
     right: 45px;
 
@@ -94,6 +94,6 @@ export const ExperienceSVG = styled(IconManager)`
         display: block;
         position: absolute;
         font-size: 400px;
-        top: 40px;
+        /* top: 40px; */
     `}
 `;
