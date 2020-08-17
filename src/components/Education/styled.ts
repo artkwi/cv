@@ -2,6 +2,7 @@ import styled, { keyframes } from 'styled-components';
 import media from 'styled-media-query';
 import { IconManager } from '..';
 import {
+  Dates,
   Description,
   Section,
   SectionInner
@@ -37,10 +38,7 @@ export const SectionStyled = styled(Section)`
 
 export const SectionInnerStyled = styled(SectionInner)``;
 
-export const Dates = styled.p`
-    color: ${({ theme }) => theme.colors.dates};
-    font-size: ${({ theme }) => theme.fontSize.xxs}px;
-`;
+export const DatesStyled = styled(Dates)``;
 
 export const DescriptionStyled = styled(Description)`
     margin-left: auto;
@@ -48,6 +46,7 @@ export const DescriptionStyled = styled(Description)`
 `;
 
 export const EducationSVG = styled(IconManager)`
+    display: none;
     font-size: 200px;
     position: absolute;
     font-size: 170px;
@@ -55,7 +54,6 @@ export const EducationSVG = styled(IconManager)`
     left: 40px;
     top: 135px;
     z-index: -1;
-    transition: font-size 0.5s;
 
     #diploma {
         animation: ${diploma} 5s linear alternate infinite;
@@ -72,6 +70,7 @@ export const EducationSVG = styled(IconManager)`
     }
 
     ${media.greaterThan('medium')`
+        display: block;
         position: absolute;
         left: 50px;
         font-size: 400px;

@@ -2,6 +2,7 @@ import styled, { keyframes } from 'styled-components';
 import media from 'styled-media-query';
 import { IconManager } from '..';
 import {
+  Dates,
   Description,
   Section,
   SectionInner
@@ -58,23 +59,20 @@ export const SectionStyled = styled(Section)`
 
 export const SectionInnerStyled = styled(SectionInner)``;
 
-export const Dates = styled.p`
-    color: ${({ theme }) => theme.colors.dates};
-    font-size: ${({ theme }) => theme.fontSize.xxs}px;
-`;
+export const DatesStyled = styled(Dates)``;
 
 export const DescriptionStyled = styled(Description)`
     margin-right: auto;
 `;
 
 export const ExperienceSVG = styled(IconManager)`
+    display: none;
     position: absolute;
     font-size: 170px;
     position: absolute;
     top: 80px;
     z-index: -1;
     right: 45px;
-    transition: font-size 0.5s;
 
     #head {
         animation: ${head} 4s linear alternate infinite;
@@ -93,6 +91,7 @@ export const ExperienceSVG = styled(IconManager)`
     }
 
     ${media.greaterThan('medium')`
+        display: block;
         position: absolute;
         font-size: 400px;
         top: 40px;

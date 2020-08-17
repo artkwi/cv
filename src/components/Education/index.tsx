@@ -11,15 +11,15 @@ const Education: React.FunctionComponent<IProps> = ({ lang }) => {
     <Styled.SectionStyled data-aos="fade-up">
       <Styled.SectionInnerStyled>
         <Styled.EducationSVG name={'education'} />
-        <Styled.Dates>{c[lang].educationDate1}</Styled.Dates>
+        <Styled.DatesStyled>{c[lang].educationDate1}</Styled.DatesStyled>
         <Styled.DescriptionStyled>
           {c[lang].education1}
         </Styled.DescriptionStyled>
-        <Styled.Dates>{c[lang].educationDate2}</Styled.Dates>
+        <Styled.DatesStyled>{c[lang].educationDate2}</Styled.DatesStyled>
         <Styled.DescriptionStyled>
           {c[lang].education2}
         </Styled.DescriptionStyled>
-        <Styled.Dates>{c[lang].educationDate3}</Styled.Dates>
+        <Styled.DatesStyled>{c[lang].educationDate3}</Styled.DatesStyled>
         <Styled.DescriptionStyled>
           {c[lang].education3}
         </Styled.DescriptionStyled>

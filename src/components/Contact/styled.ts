@@ -15,6 +15,7 @@ export const IconWrapper = styled.a`
     align-items: center;
     position: relative;
     z-index: 1;
+    outline: 0;
     cursor: pointer;
     
     svg,

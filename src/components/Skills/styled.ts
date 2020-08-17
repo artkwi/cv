@@ -58,14 +58,10 @@ export const SectionStyled = styled(Section)``;
 
 export const SectionInnerStyled = styled(SectionInner)``;
 
-export const Dates = styled.p`
-    color: ${({ theme }) => theme.colors.dates};
-    font-size: ${({ theme }) => theme.fontSize.xxs}px;
-`;
-
 export const DescriptionStyled = styled(Description)``;
 
 export const SkillsStyled = styled(IconManager)`
+    display: none;
     font-size: 170px;
     position: absolute;
     right: 40px;
@@ -109,6 +105,7 @@ export const SkillsStyled = styled(IconManager)`
     }
 
     ${media.greaterThan('medium')`
+        display: block;
         font-size: 500px;
         position: absolute;
         bottom: 0;

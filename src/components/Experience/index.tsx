@@ -11,19 +11,19 @@ const Experience: React.FunctionComponent<IProps> = ({ lang }) => {
     <Styled.SectionStyled data-aos="fade-up">
       <Styled.SectionInnerStyled>
         <Styled.ExperienceSVG name={'experience'} />
-        <Styled.Dates>{c[lang].experienceDate0}</Styled.Dates>
+        <Styled.DatesStyled>{c[lang].experienceDate0}</Styled.DatesStyled>
         <Styled.DescriptionStyled>
           {c[lang].experience0}
         </Styled.DescriptionStyled>
-        <Styled.Dates>{c[lang].experienceDate1}</Styled.Dates>
+        <Styled.DatesStyled>{c[lang].experienceDate1}</Styled.DatesStyled>
         <Styled.DescriptionStyled>
           {c[lang].experience1}
         </Styled.DescriptionStyled>
-        <Styled.Dates>{c[lang].experienceDate2}</Styled.Dates>
+        <Styled.DatesStyled>{c[lang].experienceDate2}</Styled.DatesStyled>
         <Styled.DescriptionStyled>
           {c[lang].experience2}
         </Styled.DescriptionStyled>
-        <Styled.Dates>{c[lang].experienceDate3}</Styled.Dates>
+        <Styled.DatesStyled>{c[lang].experienceDate3}</Styled.DatesStyled>
         <Styled.DescriptionStyled>
           {c[lang].experience3}
         </Styled.DescriptionStyled>

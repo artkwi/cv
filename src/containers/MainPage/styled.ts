@@ -66,7 +66,7 @@ export const Section = styled.section`
 export const SectionInner = styled.div`
     clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
     background-color: ${({ theme }) => theme.colors.sectionInner};
-    padding: 80px 40px;
+    padding: 100px 10%;
     position: relative;
 `;
 
@@ -218,6 +218,7 @@ export const AboutMeDescription = styled.p`
     }
 
     ${media.greaterThan('medium')`
+        padding: 30px 0;
         max-width: 60%;
         font-size: ${({ theme }) => theme.fontSize.l}px;
     `}
@@ -226,11 +227,16 @@ export const AboutMeDescription = styled.p`
 export const Dates = styled.p`
     color: ${({ theme }) => theme.colors.dates};
     font-size: ${({ theme }) => theme.fontSize.xxs}px;
+    margin-top: 10px;
+
+    &:first-of-type {
+        margin-top: 0;
+    }
 `;
 
 export const Description = styled.p`
     color: ${({ theme }) => theme.colors.textDescription};
-    padding: 20px 0 40px;
+    padding: 20px 0;
     margin-right: auto;
     line-height: 1.7;
 
