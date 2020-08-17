@@ -39,9 +39,15 @@ export const SectionStyled = styled(Section)`
 export const SectionInnerStyled = styled(SectionInner)``;
 
 export const DatesStyled = styled(Dates)`
-    margin-left: auto;
     text-align: left;
+    margin-left: unset;
+    margin-right: auto;
     max-width: 50%;
+    
+    ${media.greaterThan('medium')`
+        margin-left: auto;
+        margin-right: unset;
+    `}
 `;
 
 export const DescriptionStyled = styled(Description)`
