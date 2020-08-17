@@ -38,11 +38,16 @@ export const SectionStyled = styled(Section)`
 
 export const SectionInnerStyled = styled(SectionInner)``;
 
-export const DatesStyled = styled(Dates)``;
+export const DatesStyled = styled(Dates)`
+    margin-left: auto;
+    text-align: left;
+    max-width: 50%;
+`;
 
 export const DescriptionStyled = styled(Description)`
     margin-left: auto;
     margin-right: unset;
+    text-align: left;
 `;
 
 export const EducationSVG = styled(IconManager)`
