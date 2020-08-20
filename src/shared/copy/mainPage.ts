@@ -7,18 +7,18 @@ const copy: ICopy = {
     welcome: 'Hello!',
     aboutMe: 'About me',
     aboutMeDescription:
-            `My name is Artur Kwiatkowski. I graduated Computer Science at Adam Mickiewicz University in Poznań. I moved to Kraków in April 2019. I have been working in Dev and Deliver as front-end developer for over a year. In my work I mainly use Vue.js and React.js.
+            `My name is Artur Kwiatkowski. I have graduated in Computer Science at Adam Mickiewicz University in Poznań. I moved to Kraków in April 2019. I have been working in Dev and Deliver as front-end developer for over a year. In my work I mainly use Vue.js and React.js.
 I appreciate the nice atmosphere, teamwork and good coffee `,
     education: 'Education',
     experience: 'Experience',
     skills: 'Skills',
     contact: 'Contact',
     education1:
-            'Adam Mickiewicz University in Poznań - IT Engineer at Faculty of Mathematics and Computer Science - Bachelor of Engineering degree',
+            'Adam Mickiewicz University in Poznań - IT Engineer at Faculty of Mathematics and Computer Science - Bachelor of Engineering',
     education2:
             'Università della Calabria - Erasmus+ exchange programme in Italy',
     education3:
-            'Stanisław Staszic secondary technical school of information technology in Nowy Tomyśl - IT Technician degree and Gold Student honour',
+            'Stanisław Staszic secondary technical school of information technology in Nowy Tomyśl - IT Technician degree and Golden Student honour',
 
     educationDate1: '10.2015 – 03.2019',
     educationDate2: '10.2017 – 03.2018',
