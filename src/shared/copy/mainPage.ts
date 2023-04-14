@@ -6,7 +6,7 @@ export const copy: ICopy = {
     EN: {
         welcome: 'Hello!',
         aboutMe: 'About me',
-        aboutMeDescription: `My name is Artur Kwiatkowski. I have graduated in Computer Science at Adam Mickiewicz University in Poznań. I moved to Kraków in April 2019. I have been working in Dev and Deliver as front-end developer for over a year. In my work I mainly use Vue.js and React.js.
+        aboutMeDescription: `My name is Artur Kwiatkowski. I have graduated in Computer Science at Adam Mickiewicz University in Poznań. I moved to Kraków in April 2019. I was working in Dev and Deliver as front-end developer for over a year. In my work I was mainly working with Vue.js and React.js. I have been working in KISS digital since September 2020. I develop myself mainly in React.js.
 I appreciate the nice atmosphere, teamwork and good coffee `,
         education: 'Education',
         experience: 'Experience',
@@ -69,7 +69,7 @@ I appreciate the nice atmosphere, teamwork and good coffee `,
         welcome: 'Witaj!',
         aboutMe: 'O mnie',
         aboutMeDescription:
-            'Nazywam się Artur Kwiatkowski. Jestem inżynierem informatyki Uniwersytetu im. Adama Mickiewicza w Poznaniu. W kwietniu 2019 roku przeprowadziłem się do Krakowa. Od ponad roku pracuję jako front-end developer w Dev and Deliver. W mojej pracy głównie wykorzystuję Vue.js i React.js. Doceniam miłą atmosferę, pracę zespołową i dobrą kawę ',
+            'Nazywam się Artur Kwiatkowski. Jestem inżynierem informatyki Uniwersytetu im. Adama Mickiewicza w Poznaniu. W kwietniu 2019 roku przeprowadziłem się do Krakowa. Przez ponad rok pracowałem jako front-end developer w Dev and Deliver. W mojej pracy głównie używałem Vue.js i React.js. Od września 2020 pracuję w KISS digital jako front-end developer. Mój główny kierunek rozwoju to React.js. Doceniam miłą atmosferę, pracę zespołową i dobrą kawę ',
         education: 'Wykształcenie',
         experience: 'Doświadczenie',
         skills: 'Umiejętności',
