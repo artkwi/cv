@@ -2,10 +2,10 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import ParticlesBg from 'particles-bg';
 import React, { useState } from 'react';
+import AboutMe from '../../components/AboutMe';
 import Education from '../../components/Education';
 import Experience from '../../components/Experience';
 import Skills from '../../components/Skills';
-import profileImg from './../../assets/images/profile-image.jpg';
 import { Contact, IconManager, Navbar, SectionTitle } from './../../components';
 import aosConfig from './../../shared/aosConfig';
 import { copy as c } from './../../shared/copy/mainPage';
@@ -29,25 +29,7 @@ const MainPage = () => {
                 <Styled.LanguageButton onClick={() => changeLanguage()}>
                     <IconManager name={lang === 'EN' ? 'ENFlag' : 'PLFlag'} />
                 </Styled.LanguageButton>
-                <Styled.Section id="about-me">
-                    <Styled.ProfileImageWrapper>
-                        <Styled.ProfileBackground>
-                            <Styled.ProfileBackgroundTop />
-                            <Styled.ProfileBackgroundBottom />
-                        </Styled.ProfileBackground>
-                        <Styled.ProfileInfoWrapper>
-                            <Styled.Figure>
-                                <Styled.ProfileImage src={profileImg} />
-                            </Styled.Figure>
-                            <Styled.ProfileSignature>
-                                Artur Kwiatkowski
-                            </Styled.ProfileSignature>
-                        </Styled.ProfileInfoWrapper>
-                    </Styled.ProfileImageWrapper>
-                    <Styled.AboutMeDescription>
-                        {c[lang].aboutMeDescription}&#9749;
-                    </Styled.AboutMeDescription>
-                </Styled.Section>
+                <AboutMe lang={lang} />
                 <SectionTitle id={'skills'} title={c[lang].skills} />
                 <Skills lang={lang} />
                 <SectionTitle id={'education'} title={c[lang].education} />
