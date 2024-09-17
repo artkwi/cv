@@ -5,10 +5,10 @@ object-assign
 */
 
 /*!
-* Proton v4.1.5
+* Proton v4.2.1
 * https://github.com/drawcall/Proton
 *
-* Copyright 2013-2019, A-JIE
+* Copyright 2013-2020, A-JIE
 * Licensed under the MIT license
 * http://www.opensource.org/licenses/mit-license
 *
