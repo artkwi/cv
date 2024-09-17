@@ -6,8 +6,12 @@ export const copy: ICopy = {
     EN: {
         welcome: 'Hello!',
         aboutMe: 'About me',
-        aboutMeDescription: `My name is Artur Kwiatkowski. I have graduated in Computer Science at Adam Mickiewicz University in Poznań. I moved to Kraków in April 2019. I was working in Dev and Deliver as front-end developer for over a year. In my work I was mainly working with Vue.js and React.js. I have been working in KISS digital since September 2020. I develop myself mainly in React.js.
-I appreciate the nice atmosphere, teamwork and good coffee `,
+        aboutMeDescription: `My name is Artur Kwiatkowski.
+            I&nbsp;have graduated in Computer Science at Adam Mickiewicz University in Poznań.
+            I&nbsp;moved to Kraków in April 2019. 
+            Since then, I&nbsp;am working as a&nbsp;front-end developer.
+            I&nbsp;develop myself mainly in React.js and TypeScript.
+            I&nbsp;appreciate teamwork, commitment and a good coffee `,
         education: 'Education',
         experience: 'Experience',
         skills: 'Skills',
@@ -81,8 +85,12 @@ I appreciate the nice atmosphere, teamwork and good coffee `,
     PL: {
         welcome: 'Witaj!',
         aboutMe: 'O mnie',
-        aboutMeDescription:
-            'Nazywam się Artur Kwiatkowski. Jestem inżynierem informatyki Uniwersytetu im. Adama Mickiewicza w Poznaniu. W kwietniu 2019 roku przeprowadziłem się do Krakowa. Przez ponad rok pracowałem jako front-end developer w Dev and Deliver. W mojej pracy głównie używałem Vue.js i React.js. Od września 2020 pracuję w KISS digital jako front-end developer. Mój główny kierunek rozwoju to React.js. Doceniam miłą atmosferę, pracę zespołową i dobrą kawę ',
+        aboutMeDescription: `Nazywam się Artur Kwiatkowski.
+            Jestem inżynierem informatyki Uniwersytetu im. Adama Mickiewicza w&nbsp;Poznaniu.
+            W kwietniu 2019 roku przeprowadziłem się do&nbsp;Krakowa. 
+            Od tego czasu pracuję jako front-end developer.
+            Mój główny kierunek rozwoju to React.js z&nbsp;TypeScript. 
+            Doceniam pracę zespołową, zaangaowanie i&nbsp;dobrą kawę `,
         education: 'Wykształcenie',
         experience: 'Doświadczenie',
         skills: 'Umiejętności',

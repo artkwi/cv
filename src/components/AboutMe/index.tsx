@@ -22,9 +22,11 @@ const AboutMe = ({ lang }: Props) => (
                 <S.ProfileSignature>Artur Kwiatkowski</S.ProfileSignature>
             </S.ProfileInfoWrapper>
         </S.ProfileImageWrapper>
-        <S.AboutMeDescription>
-            {c[lang].aboutMeDescription}&#9749;
-        </S.AboutMeDescription>
+        <S.AboutMeDescription
+            dangerouslySetInnerHTML={{
+                __html: `${c[lang].aboutMeDescription}&#9749;`,
+            }}
+        />
     </SCommon.Section>
 );
 
