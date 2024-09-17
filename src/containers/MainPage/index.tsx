@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
-import * as Styled from './styled';
-import { Contact, SectionTitle, Navbar, IconManager } from './../../components';
-import profileImg from './../../assets/images/profile-image.jpg';
-import { copy as c } from './../../shared/copy/mainPage';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import ParticlesBg from 'particles-bg';
-import Skills from '../../components/Skills';
+import React, { useState } from 'react';
 import Education from '../../components/Education';
 import Experience from '../../components/Experience';
-import 'aos/dist/aos.css';
-import AOS from 'aos';
+import Skills from '../../components/Skills';
+import profileImg from './../../assets/images/profile-image.jpg';
+import { Contact, IconManager, Navbar, SectionTitle } from './../../components';
 import aosConfig from './../../shared/aosConfig';
+import { copy as c } from './../../shared/copy/mainPage';
+import * as Styled from './styled';
 
 AOS.init(aosConfig);
 
@@ -48,25 +48,16 @@ const MainPage = () => {
                         {c[lang].aboutMeDescription}&#9749;
                     </Styled.AboutMeDescription>
                 </Styled.Section>
-                <SectionTitle
-                    id={'skills'}
-                    title={c[lang].skills}
-                ></SectionTitle>
+                <SectionTitle id={'skills'} title={c[lang].skills} />
                 <Skills lang={lang} />
-                <SectionTitle
-                    id={'education'}
-                    title={c[lang].education}
-                ></SectionTitle>
+                <SectionTitle id={'education'} title={c[lang].education} />
                 <Education lang={lang} />
                 <SectionTitle
                     id={'work-experience'}
                     title={c[lang].experience}
-                ></SectionTitle>
+                />
                 <Experience lang={lang} />
-                <SectionTitle
-                    id={'contact'}
-                    title={c[lang].contact}
-                ></SectionTitle>
+                <SectionTitle id={'contact'} title={c[lang].contact} />
                 <Contact />
             </Styled.Main>
         </>
