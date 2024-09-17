@@ -25,9 +25,13 @@ I appreciate the nice atmosphere, teamwork and good coffee `,
 
         experienceList: [
             {
+                title: 'Scalo - front-end developer (React, TypeScript)',
+                date: '08.2023 – present',
+            },
+            {
                 title:
                     'KISS digital - front-end developer (React, TypeScript, Next.js)',
-                date: '09.2020 – present',
+                date: '09.2020 – 07.2023',
             },
             {
                 title:
@@ -39,7 +43,7 @@ I appreciate the nice atmosphere, teamwork and good coffee `,
                 date: '07.2018 – 09.2018',
             },
             {
-                title: 'Internship in Phoenix Contact - .NET programmer',
+                title: 'Internship in Phoenix Contact - .NET developer',
                 date: '08.2017',
             },
             {
@@ -50,9 +54,24 @@ I appreciate the nice atmosphere, teamwork and good coffee `,
         ],
 
         htmlSkills: [
-            'HTML', 'CSS/SASS', 'Styled Components', 'CSS Modules', 'Tailwind CSS', 'Flex', 'Grid', 'Bootstrap', 'BEM', 'RWD'
+            'HTML',
+            'CSS/SASS',
+            'Styled Components',
+            'CSS Modules',
+            'Tailwind CSS',
+            'Flex',
+            'Grid',
+            'Bootstrap',
+            'BEM',
+            'RWD',
         ],
-        jsSkills: ['JavaScript/ES6', 'React/Redux', 'TypeScript', 'jQuery',' Vue/Vuex'],
+        jsSkills: [
+            'JavaScript/ES6',
+            'React/Redux',
+            'TypeScript',
+            'jQuery',
+            ' Vue/Vuex',
+        ],
         databaseSkills: ['GraphQL', 'SQL'],
         terminalSkills: ['Git', 'terminal'],
         OOPSkill: 'Object-oriented programming',
@@ -81,9 +100,13 @@ I appreciate the nice atmosphere, teamwork and good coffee `,
 
         experienceList: [
             {
+                title: 'Scalo - programista front-end (React, TypeScript)',
+                date: '08.2023 – present',
+            },
+            {
                 title:
                     'KISS digital - programista front-end (React, TypeScript, Next.js)',
-                date: '09.2020 – present',
+                date: '09.2020 – 07.2023',
             },
             {
                 title:
@@ -107,9 +130,24 @@ I appreciate the nice atmosphere, teamwork and good coffee `,
         ],
 
         htmlSkills: [
-            'HTML', 'CSS/SASS', 'Styled Components', 'CSS Modules', 'Tailwind CSS', 'Flex', 'Grid', 'Bootstrap', 'BEM', 'RWD'
+            'HTML',
+            'CSS/SASS',
+            'Styled Components',
+            'CSS Modules',
+            'Tailwind CSS',
+            'Flex',
+            'Grid',
+            'Bootstrap',
+            'BEM',
+            'RWD',
         ],
-        jsSkills: ['JavaScript/ES6', 'React/Redux', 'TypeScript', 'jQuery',' Vue/Vuex'],
+        jsSkills: [
+            'JavaScript/ES6',
+            'React/Redux',
+            'TypeScript',
+            'jQuery',
+            ' Vue/Vuex',
+        ],
         databaseSkills: ['GraphQL', 'SQL'],
         terminalSkills: ['Git', 'terminal'],
         OOPSkill: 'Programowanie obiektowe',
