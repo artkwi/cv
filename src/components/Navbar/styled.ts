@@ -27,7 +27,7 @@ export const Nav = styled.nav<{ isOpen: boolean }>`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: ${({ theme }) => (theme.fontSize.l)}px;
+    font-size: ${({ theme }) => theme.fontSize.l}px;
     letter-spacing: 5px;
     opacity: 0;
     animation: ${navAnimation} 0.5s ease-out 1s forwards;
@@ -35,15 +35,16 @@ export const Nav = styled.nav<{ isOpen: boolean }>`
     ${media.greaterThan('medium')`
     justify-content: flex-start;
     height: unset;
-    font-size: ${({ theme }) => (theme.fontSize.m)}px;
+    font-size: ${({ theme }) => theme.fontSize.m}px;
     letter-spacing: 1px;
     `}
 `;
 
-export const Item = styled.li<{isTop: boolean}>`
+export const Item = styled.li<{ isTop: boolean }>`
     position: relative;
     z-index: 45;
-    background-color: ${({ theme, isTop }) => isTop ? 'transparent' : theme.colors.purpleTransparent};
+    background-color: ${({ theme, isTop }) =>
+        isTop ? 'transparent' : theme.colors.purpleTransparent};
     height: 100%;
     padding: 20px;
     text-align: center;
@@ -59,13 +60,12 @@ export const Item = styled.li<{isTop: boolean}>`
         opacity: 0.8;
         top: 0;
         bottom: 0;
-        width: 0;
-        height: 0;
         z-index: -1;
         transition: transform 0.2s;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%) scale(0);
+        left: 0;
+        top: 0;
+        transform: scaleX(0);
+        transform-origin: right;
         width: 100%;
         height: 100%;
     }
@@ -73,7 +73,8 @@ export const Item = styled.li<{isTop: boolean}>`
     &:hover {
         color: ${({ theme }) => theme.colors.black};
         &:after {
-            transform: translate(-50%, -50%) scale(1);
+            transform: scaleX(1);
+            transform-origin: left;
         }
     }
 `;
