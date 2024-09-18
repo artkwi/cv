@@ -1,7 +1,7 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import ParticlesBg from 'particles-bg';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import AboutMe from '../../components/AboutMe';
 import Education from '../../components/Education';
 import Experience from '../../components/Experience';
@@ -11,13 +11,15 @@ import aosConfig from './../../shared/aosConfig';
 import { copy as c } from './../../shared/copy/mainPage';
 import * as Styled from './styled';
 
-AOS.init(aosConfig);
-
 const MainPage = () => {
     const [lang, setLang] = useState('EN');
     const changeLanguage = () => {
         lang === 'EN' ? setLang('PL') : setLang('EN');
     };
+
+    useEffect(() => {
+        AOS.init(aosConfig);
+    }, []);
 
     return (
         <>
