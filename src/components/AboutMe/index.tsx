@@ -24,7 +24,7 @@ const AboutMe = ({ lang }: Props) => (
         </S.ProfileImageWrapper>
         <S.AboutMeDescription
             dangerouslySetInnerHTML={{
-                __html: `${c[lang].aboutMeDescription}&#9749;`,
+                __html: `${c[lang].aboutMeDescription}`,
             }}
         />
     </SCommon.Section>
