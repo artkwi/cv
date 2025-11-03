@@ -32,15 +32,15 @@ const MainPage = () => {
                     <IconManager name={lang === 'EN' ? 'ENFlag' : 'PLFlag'} />
                 </Styled.LanguageButton>
                 <AboutMe lang={lang} />
-                <SectionTitle id={'skills'} title={c[lang].skills} />
-                <Skills lang={lang} />
-                <SectionTitle id={'education'} title={c[lang].education} />
-                <Education lang={lang} />
                 <SectionTitle
                     id={'work-experience'}
                     title={c[lang].experience}
                 />
                 <Experience lang={lang} />
+                <SectionTitle id={'skills'} title={c[lang].skills} />
+                <Skills lang={lang} />
+                <SectionTitle id={'education'} title={c[lang].education} />
+                <Education lang={lang} />
                 <SectionTitle id={'contact'} title={c[lang].contact} />
                 <Contact />
             </Styled.Main>

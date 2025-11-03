@@ -29,7 +29,7 @@ export const copy: ICopy = {
 
         experienceList: [
             {
-                title: 'Scalo - front-end developer (React, TypeScript)',
+                title: 'Scalo - front-end developer (React, TypeScript, Angular)',
                 date: '08.2023 – present',
             },
             {
@@ -108,7 +108,7 @@ export const copy: ICopy = {
 
         experienceList: [
             {
-                title: 'Scalo - programista front-end (React, TypeScript)',
+                title: 'Scalo - programista front-end (React, TypeScript, Angular)',
                 date: '08.2023 – present',
             },
             {
