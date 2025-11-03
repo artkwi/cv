@@ -1,5 +1,5 @@
 import React from 'react';
-import profileImg from './../../assets/images/profile-image.jpg';
+import profileImg from './../../assets/images/profile-image-new.jpg';
 import { copy as c } from './../../shared/copy/mainPage';
 import * as S from './styled';
 import * as SCommon from '../../containers/MainPage/styled';
